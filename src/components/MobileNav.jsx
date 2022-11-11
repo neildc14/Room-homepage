@@ -10,7 +10,6 @@ function MobileNav() {
   const toggle = useSelector((state) => state.navToggle.toggle);
   const dispatch = useDispatch();
 
-  console.log(toggle);
   return (
     <Flex>
       <HamburgerIcon
