@@ -15,7 +15,7 @@ import ImageAboutLight from "../assets/images/image-about-light.jpg";
 
 function About() {
   return (
-    <Box mt={{ sm: 12, lg: 0 }}>
+    <Box mt={{ base: 12, lg: 0 }}>
       <SimpleGrid columns={{ lg: 3 }}>
         <AspectRatio ratio={16 / 10}>
           <Image src={ImageAboutDark} aria-label="About image" mx={0} />

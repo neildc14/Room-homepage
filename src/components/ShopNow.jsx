@@ -19,7 +19,7 @@ function ShopNow() {
 
         <Button
           variant="ghost"
-          ps={0}
+          ps={2}
           mt={{ base: 10, lg: 6 }}
           sx={{
             paddingRight: "40px",

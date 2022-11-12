@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { setToggle } from "../redux/features/navToggleSlice";
-import { Box, Flex, Spacer, Slide, Container, Center } from "@chakra-ui/react";
+import { Box, Flex, Spacer, Center } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import Nav from "./layouts/Nav";
 import Logo from "./Logo";
