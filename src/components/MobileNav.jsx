@@ -13,21 +13,24 @@ function MobileNav() {
   return (
     <Flex>
       <HamburgerIcon
-        w={9}
-        h={9}
-        color="white"
+        sx={{ w: 9, h: 9, color: "white", transition: "all 0.5s ease-in-out" }}
+        _active={{
+          border: "1px",
+          borderColor: "gray.200",
+          borderRadius: "md",
+        }}
         onClick={() => dispatch(setToggle(!toggle))}
       />
       {toggle && <Spacer />}
       {toggle ? (
-        <Box>
+        <Box sx={{ transition: "all 0.5s ease-in-out" }}>
           <Center>
             <Nav />
           </Center>
         </Box>
       ) : (
         <Flex justifyContent="center" alignItems="center" w="100%">
-          <Box mx="auto">
+          <Box mx="auto" sx={{ transition: "all 0.5s ease-in-out" }}>
             <Logo />
           </Box>
         </Flex>

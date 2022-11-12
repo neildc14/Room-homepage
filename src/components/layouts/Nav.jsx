@@ -1,17 +1,11 @@
 import React from "react";
-import { Stack, Link, Center } from "@chakra-ui/react";
+import { Stack, Link } from "@chakra-ui/react";
 
 function Nav() {
   return (
-    <Stack
-      as="nav"
-      direction="row"
-      spacing={8}
-      color="white"
-      sx={{ transition: "all .7s ease-in-out" }}
-    >
+    <Stack as="nav" direction="row" spacing={8} color="white">
       <Link>Home</Link>
-      <Link>Shope</Link>
+      <Link>Shop</Link>
       <Link>About</Link>
       <Link>Contact</Link>
     </Stack>

@@ -34,11 +34,12 @@ function Hero() {
         height="60vh"
         w={"100%"}
         sx={{
+          position: "relative",
           backgroundImage: `url(${carouselImages[index]})`,
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center center",
           backgroundSize: "cover",
-          position: "relative",
+          transition: "all 0.5s ease-in-out",
         }}
       >
         <Container sx={{ height: "100%" }}>
@@ -54,10 +55,8 @@ function Hero() {
               color="white"
               w={12}
               h={14}
-              _hover={{
-                color: "teal.300",
-              }}
               _active={{ color: "black" }}
+              _hover={{ color: "black" }}
             />
           </ArrowButton>
           <ArrowButton carouselSlide={forwardFunc}>
@@ -65,10 +64,8 @@ function Hero() {
               color="white"
               w={12}
               h={14}
-              _hover={{
-                color: "teal.300",
-              }}
               _active={{ color: "black" }}
+              _hover={{ color: "black" }}
             />
           </ArrowButton>
         </ButtonGroup>

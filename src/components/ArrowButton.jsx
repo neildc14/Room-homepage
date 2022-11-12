@@ -9,7 +9,8 @@ function ArrowButton({ children, carouselSlide }) {
       height="100%"
       py={3}
       borderRadius="none"
-      _active={{ background: "teal.500" }}
+      _active={{ background: "gray.600", transition: "all 0.3s ease-in" }}
+      _hover={{ background: "gray.300", transition: "all 0.5s ease-in" }}
       onClick={carouselSlide}
     >
       {children}
